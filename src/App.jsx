@@ -16,6 +16,7 @@ const App = () => {
   return (
     <div className='mx-4 sm:mx-[10%]'>
       <Navbar />
+       <BrowserRouter basename="/hospital">
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/doctors' element={<Doctors />} />
@@ -27,6 +28,7 @@ const App = () => {
         <Route path='/my-appointments' element={<MyAppointments />} />
         <Route path='/my-profile' element={<MyProfile />} />
       </Routes>
+       </BrowserRouter>
       <Footer />
     </div>
   )
